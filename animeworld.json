@@ -1,0 +1,51 @@
+{
+    "name": "AnimeWorld",
+    "version": "1.0.0",
+    "author": {
+        "name": "sobet",
+        "website": "https://google.com"
+    },
+    "iconURL": "https://raw.githubusercontent.com/cranci1/Ryu/refs/heads/main/Ryu/Assets.xcassets/Sources/AnimeWorld.imageset/animeworld.png",
+    "stream": "MP4",
+    "language": "IT",
+    "extractor": "normal",
+    "module": [
+        {
+            "search": {
+                "url": "https://animeworld.so/search",
+                "parameter": "keyword",
+                "documentSelector": ".film-list .item",
+                "title": "a.name",
+                "image": {
+                    "url": "a.poster img",
+                    "attribute": "src"
+                },
+                "href": "a.poster"
+            },
+            "featured": {
+                "url": "https://www.animeworld.so",
+                "documentSelector": "div.content[data-name=all] div.item",
+                "title": "a.name",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a.poster"
+            },
+            "details": {
+                "baseURL": "https://animeworld.so",
+                "aliases": {
+                    "selector": "div.widget-title h1",
+                    "attribute": "data-jtitle"
+                },
+                "synopsis": "div.info div.desc",
+                "airdate": "div.row dl.meta dt:contains(Data di Uscita) + dd",
+                "stars": "dd.rating span"
+            },
+            "episodes": {
+                "selector": "div.server.active ul.episodes li.episode a",
+                "order": "ordered"
+            }
+        }
+    ]
+}

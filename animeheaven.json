@@ -1,0 +1,51 @@
+{
+    "name": "AnimeHeaven",
+    "version": "1.0.0",
+    "author": {
+        "name": "sobet",
+        "website": "https://google.com"
+    },
+    "iconURL": "https://animeheaven.me/ah_logo.png",
+    "stream": "MP4",
+    "language": "EN",
+    "extractor": "normal",
+    "module": [
+        {
+            "search": {
+                "url": "https://animeheaven.me/search.php",
+                "parameter": "s",
+                "documentSelector": "div.similarimg",
+                "title": "a.c",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "featured": {
+                "url": "https://animeheaven.me/new.php",
+                "documentSelector": "div.chart.bc1",
+                "title": "a.c",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "details": {
+                "baseURL": "https://animeheaven.me/",
+                "aliases": {
+                    "selector": "",
+                    "attribute": ""
+                },
+                "synopsis": "div.infodes.c",
+                "airdate": "",
+                "stars": ""
+            },
+            "episodes": {
+                "selector": "div.linetitle2 a",
+                "order": "reversed"
+            }
+        }
+    ]
+}
