@@ -44,7 +44,8 @@
             },
             "episodes": {
                 "selector": "div.server.active ul.episodes li.episode a",
-                "order": "ordered"
+                "order": "ordered",
+                "pattern": ""
             }
         }
     ]

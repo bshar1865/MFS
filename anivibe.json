@@ -44,7 +44,8 @@
             },
             "episodes": {
                 "selector": "div.eplister ul li a",
-                "order": "reversed"
+                "order": "reversed",
+                "pattern": ""
             }
         }
     ]
