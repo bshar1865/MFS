@@ -1,0 +1,52 @@
+{
+    "name": "AniWorld",
+    "version": "1.0.0",
+    "author": {
+        "name": "sobet",
+        "website": "https://google.com"
+    },
+    "iconURL": "https://imgs.search.brave.com/X4G2C9ZxxYUttLJK3_JN1KxCoCuaDzhZBfrG4joukTk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODZkNTlhODYw/YjE0NmFjM2I1ZmVh/ZmZkYmEzODYzYmNi/YmM3ZGI2NWI0NTAy/MmE0YzQ3ODk5NTYx/MzdlYmI2ZC9hbml3/b3JsZC50by8",
+    "stream": "HLS",
+    "language": "EN",
+    "extractor": "dub-sub",
+    "module": [
+        {
+            "search": {
+                "url": "https://aniworld.to/search",
+                "parameter": "keyword",
+                "documentSelector": "div.listupd article",
+                "title": "div.tt span",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "featured": {
+                "url": "https://aniworld.to",
+                "documentSelector": "div.listupd article",
+                "title": "div.tt span",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "details": {
+                "baseURL": "https://aniworld.to",
+                "aliases": {
+                    "selector": "div.post-title h1",
+                    "attribute": "text"
+                },
+                "synopsis": "div.entry-content",
+                "airdate": "div.post-meta span:contains(Aired) + span",
+                "stars": "div.post-meta span:contains(Rating) + span"
+            },
+            "episodes": {
+                "selector": "div.eplister ul li a",
+                "order": "reversed",
+                "pattern": ""
+            }
+        }
+    ]
+}
