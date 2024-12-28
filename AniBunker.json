@@ -1,5 +1,5 @@
 {
-    "name": "AniBunker",
+    "name": "AnimeSRBIJA",
     "version": "1.0.0",
     "author": {
         "name": "sobet",
@@ -7,12 +7,12 @@
     },
     "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/animeworld.png",
     "stream": "MP4",
-    "language": "AR",
+    "language": "SB",
     "extractor": "pattern-mp4",
     "module": [
         {
             "search": {
-                "url": "https://www.animesrbija.com/filter?search=",
+                "url": "https://www.animesrbija.com/filter?search",
                 "parameter": "q",
                 "documentSelector": "div.my-2.w-64",
                 "title": "h2.text-ellipsis",
