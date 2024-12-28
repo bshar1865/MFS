@@ -5,7 +5,7 @@
         "name": "sobet",
         "website": "https://google.com"
     },
-    "iconURL": "https://pbs.twimg.com/profile_images/1692716195181387776/1J4bIRqx_200x200.jpg",
+    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/Anime3rb.png",
     "stream": "MP4",
     "language": "AR",
     "extractor": "pattern-mp4",
