@@ -5,7 +5,7 @@
         "name": "sobet",
         "website": "https://google.com"
     },
-    "iconURL": "https://raw.githubusercontent.com/cranci1/Ryu/7c3fb5e9818ede277f76955eb4fcbf5096c47d7c/Ryu/Assets.xcassets/Sources/AniVibe.imageset/anivibe.jpg",
+    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/anivibe.jpg",
     "stream": "HLS",
     "language": "EN",
     "extractor": "dub-sub",
