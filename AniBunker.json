@@ -1,0 +1,52 @@
+{
+    "name": "AniBunker",
+    "version": "1.0.0",
+    "author": {
+        "name": "sobet",
+        "website": "https://google.com"
+    },
+    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/animeworld.png",
+    "stream": "MP4",
+    "language": "AR",
+    "extractor": "pattern-mp4",
+    "module": [
+        {
+            "search": {
+                "url": "https://anibunker.com/search",
+                "parameter": "q",
+                "documentSelector": "div.my-2.w-64",
+                "title": "h2.text-ellipsis",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "featured": {
+                "url": "https://anibunker.com/home",
+                "documentSelector": "div.content[data-name=all] div.item",
+                "title": "a.name",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a.poster"
+            },
+            "details": {
+                "baseURL": "https://anibunker.com/home",
+                "aliases": {
+                    "selector": "",
+                    "attribute": ""
+                },
+                "synopsis": "div.container div.py-4.flex.flex-col p",
+                "airdate": "",
+                "stars": ""
+            },
+            "episodes": {
+                "selector": "div.videos-container a",
+                "order": "ordered",
+                "pattern": "https://anibunker\\.com/anime/[\\w-]+\\?token=[\\w]+&(?:amp;)?expires=\\d+"
+            }
+        }
+    ]
+}
