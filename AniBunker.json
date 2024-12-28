@@ -12,8 +12,8 @@
     "module": [
         {
             "search": {
-                "url": "https://www.animesrbija.com/filter?search",
-                "parameter": "q",
+                "url": "https://www.animesrbija.com/filter",
+                "parameter": "search",
                 "documentSelector": "div.my-2.w-64",
                 "title": "h2.text-ellipsis",
                 "image": {
