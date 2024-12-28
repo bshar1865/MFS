@@ -10,12 +10,12 @@
     "language": "SB",
     "extractor": "pattern-mp4",
     "module": [
-        {
+              {
             "search": {
                 "url": "https://www.animesrbija.com/filter",
                 "parameter": "search",
-                "documentSelector": "div.my-2.w-64",
-                "title": "h2.text-ellipsis",
+                "documentSelector": "div.ani-wrap div",
+                "title": "h3",
                 "image": {
                     "url": "img",
                     "attribute": "src"
