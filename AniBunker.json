@@ -12,7 +12,7 @@
     "module": [
         {
             "search": {
-                "url": "https://anibunker.com/search",
+                "url": "https://anibunker.com/search?q=",
                 "parameter": "q",
                 "documentSelector": "div.my-2.w-64",
                 "title": "h2.text-ellipsis",
