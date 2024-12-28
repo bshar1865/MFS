@@ -12,7 +12,7 @@
     "module": [
         {
             "search": {
-                "url": "https://anibunker.com/search?q=",
+                "url": "https://www.animesrbija.com/filter?search=",
                 "parameter": "q",
                 "documentSelector": "div.my-2.w-64",
                 "title": "h2.text-ellipsis",
@@ -23,7 +23,7 @@
                 "href": "a"
             },
             "featured": {
-                "url": "https://anibunker.com/home",
+                "url": "https://www.animesrbija.com",
                 "documentSelector": "div.content[data-name=all] div.item",
                 "title": "a.name",
                 "image": {
@@ -33,7 +33,7 @@
                 "href": "a.poster"
             },
             "details": {
-                "baseURL": "https://anibunker.com/home",
+                "baseURL": "https://www.animesrbija.com/",
                 "aliases": {
                     "selector": "",
                     "attribute": ""
@@ -45,7 +45,7 @@
             "episodes": {
                 "selector": "div.videos-container a",
                 "order": "ordered",
-                "pattern": "https://anibunker\\.com/anime/[\\w-]+\\?token=[\\w]+&(?:amp;)?expires=\\d+"
+                "pattern": "player[12]\":\"!https://video\\.asgold\\.pp\\.ua/video/[^\"]*\""
             }
         }
     ]
