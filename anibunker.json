@@ -1,0 +1,52 @@
+{
+    "name": "AniBunker",
+    "version": "1.0.0",
+    "author": {
+        "name": "sobet",
+        "website": "https://google.com"
+    },
+    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/anibunker.png",
+    "stream": "MP4",
+    "language": "PT",
+    "extractor": "normal",
+    "module": [
+        {
+            "search": {
+                "url": "https://www.anibunker.com/search",
+                "parameter": "q",
+                "documentSelector": "div.section--body article",
+                "title": "h4",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "featured": {
+                "url": "https://anibunker.com/releases",
+                "documentSelector": "div.section--body article",
+                "title": "h4",
+                "image": {
+                    "url": "img",
+                    "attribute": "src"
+                },
+                "href": "a"
+            },
+            "details": {
+                "baseURL": "https://www.anibunker.com",
+                "aliases": {
+                    "selector": "div.post-title h1",
+                    "attribute": "text"
+                },
+                "synopsis": "",
+                "airdate": "",
+                "stars": ""
+            },
+            "episodes": {
+                "selector": "div.eps-display a",
+                "order": "ordered",
+                "pattern": ""
+            }
+        }
+    ]
+}
