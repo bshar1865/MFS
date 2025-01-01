@@ -1,0 +1,52 @@
+{
+    "name": "AnimeSRBIJA",
+    "version": "1.0.0",
+    "author": {
+        "name": "sobet",
+        "website": "https://google.com"
+    },
+    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/animesrbija.png",
+    "stream": "MP4",
+    "language": "HR",
+    "extractor": "pattern",
+    "module": [
+        {
+            "search": {
+                "url": "https://www.animesrbija.com/filter",
+                "parameter": "search",
+                "documentSelector": "div.ani-wrap div.ani-item",
+                "title": "h3",
+                "image": {
+                    "url": "img",
+                    "attribute": "srcset"
+                },
+                "href": "a"
+            },
+            "featured": {
+                "url": "https://www.animesrbija.com/",
+                "documentSelector": "div.section-new-episodes div.ani-item",
+                "title": "h3",
+                "image": {
+                    "url": "img",
+                    "attribute": "srcset"
+                },
+                "href": "a"
+            },
+            "details": {
+                "baseURL": "https://www.animesrbija.com/",
+                "aliases": {
+                    "selector": "h3.anime-eng-name",
+                    "attribute": ""
+                },
+                "synopsis": "div.anime-description",
+                "airdate": "",
+                "stars": ""
+            },
+            "episodes": {
+                "selector": ".anime-episodes-holder .anime-episode-item .anime-episode-link",
+                "order": "reversed",
+                "pattern": "XCJwbGF5ZXIyXCI6XCIhaHR0cHM6Ly9bXlwiXStcIg=="
+            }
+        }
+    ]
+}
