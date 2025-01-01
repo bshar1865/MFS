@@ -1,0 +1,52 @@
+{
+    "name": "AnimeBalkan",
+    "version": "1.0.0",
+    "author": {
+        "name": "sobet",
+        "website": "https://google.com"
+    },
+    "iconURL": "https://raw.githubusercontent.com/bshar1865/MFS/refs/heads/main/assets/animebalkan.png",
+    "stream": "MP4",
+    "language": "HR",
+    "extractor": "pattern",
+    "module": [
+        {
+            "search": {
+                "url": "https://animebalkan.org/",
+                "parameter": "s",
+                "documentSelector": "div.listupd article",
+                "title": "div.tt",
+                "image": {
+                    "url": "img",
+                    "attribute": "data-src"
+                },
+                "href": "a"
+            },
+            "featured": {
+                "url": "https://animebalkan.org/animesaprevodom/?status=&type=&order=update",
+                "documentSelector": "div.listupd article",
+                "title": "div.tt",
+                "image": {
+                    "url": "img",
+                    "attribute": "data-src"
+                },
+                "href": "a"
+            },
+            "details": {
+                "baseURL": "https://animebalkan.org",
+                "aliases": {
+                    "selector": "",
+                    "attribute": ""
+                },
+                "synopsis": "div.synp p",
+                "airdate": "",
+                "stars": ""
+            },
+            "episodes": {
+                "selector": "div.eplister ul li a",
+                "order": "reversed",
+                "pattern": "aHR0cHM6XC9cL1tcd1wuXStcL2IyYXBpXC92MVwvYjJfZG93bmxvYWRfZmlsZV9ieV9pZFw/ZmlsZUlkPVtcd19dKw=="
+            }
+        }
+    ]
+}
